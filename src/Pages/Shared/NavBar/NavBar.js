@@ -31,7 +31,7 @@ export default function NavBar() {
                     variant="small"
                     className="mr-4 cursor-pointer py-1.5 font-normal"
                 >
-                    
+                    <span className="text-xl text-white">_Bayezid</span>
                 </Typography>
                 <div className="hidden lg:block">{navList}</div>
                 <a href="https://drive.google.com/file/d/1FtjQIpVBiEQTumu4BNTNRaOuOjwvB7v2/view?usp=sharing">
