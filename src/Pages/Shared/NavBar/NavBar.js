@@ -31,14 +31,19 @@ export default function NavBar() {
                     variant="small"
                     className="mr-4 cursor-pointer py-1.5 font-normal"
                 >
-                    <span className="text-xl text-white">_Bayezid</span>
+                    <span className="text-3xl text-white">_Bayezid</span>
                 </Typography>
-                <div className="hidden lg:block">{navList}</div>
-                <a href="https://drive.google.com/file/d/1FtjQIpVBiEQTumu4BNTNRaOuOjwvB7v2/view?usp=sharing">
-                    <Button href='https://drive.google.com/file/d/1FtjQIpVBiEQTumu4BNTNRaOuOjwvB7v2/view?usp=sharing' color="brown" ripple={false} variant="outlined" size="xl" className="hidden lg:inline-block">
-                        <span className="text-white">Resume</span>
-                    </Button>
-                </a>
+                <Button
+                    onClick={() => {
+                        window.open(
+                            "https://drive.google.com/file/d/1FtjQIpVBiEQTumu4BNTNRaOuOjwvB7v2/view?usp=sharing",
+                            "_blank"
+                        );
+                    }}
+                    color="brown" ripple={false} variant="outlined" size="lg" className="hidden lg:inline-block">
+                    <div className="hidden lg:block">{navList}</div>
+                    <span className="text-white">Download Resume</span>
+                </Button>
                 <IconButton
                     variant="text"
                     className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
@@ -79,11 +84,16 @@ export default function NavBar() {
             </div>
             <MobileNav open={openNav}>
                 {navList}
-                <a href="https://drive.google.com/file/d/1FtjQIpVBiEQTumu4BNTNRaOuOjwvB7v2/view?usp=sharing">
-                    <Button ripple={false} variant="gradient" size="sm" fullWidth className="mb-2">
-                        <span>Resume</span>
-                    </Button>
-                </a>
+                <Button
+                    onClick={() => {
+                        window.open(
+                            "https://drive.google.com/file/d/1FtjQIpVBiEQTumu4BNTNRaOuOjwvB7v2/view?usp=sharing",
+                            "_blank"
+                        );
+                    }}
+                    ripple={false} variant="gradient" size="lg" fullWidth className="mb-2">
+                    <span>Download Resume</span>
+                </Button>
             </MobileNav>
         </Navbar>
     );

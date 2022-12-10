@@ -8,32 +8,32 @@ const Skills = () => {
     return (
         <div className='container mx-auto'>
             <div>
-                <p className='text-xl sm:text-3xl md:text-5xl text-white font-semibold text-center'>Technology Stacks</p>
+                <p style={{textShadow:"0 3px 3px #b36417"}} className='text-xl sm:text-3xl md:text-5xl text-white font-semibold text-center'>Technology Stacks</p>
             </div>
             <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-10 mt-16'>
                 <div>
-                    <DiHtml5 className='text-white hover:shadow-md duration-300 hover:shadow-white w-32 h-32 mx-auto border p-2 rounded-xl'/>
+                    <DiHtml5 className='text-white bg-gray-800/[0.4] hover:bg-brown-700 hover:bg-opacity-50 hover:shadow-md duration-300 hover:shadow-brown-600 w-32 h-32 mx-auto border p-2 rounded-xl'/>
                 </div>
                 <div>
-                    <DiCss3 className='text-white hover:shadow-md duration-300 hover:shadow-white w-32 h-32 mx-auto border p-2 rounded-xl'/>
+                    <DiCss3 className='text-white bg-gray-800/[0.4] hover:bg-brown-700 hover:bg-opacity-50 hover:shadow-md duration-300 hover:shadow-brown-600 w-32 h-32 mx-auto border p-2 rounded-xl'/>
                 </div>
                 <div>
-                    <SiTailwindcss className='text-white hover:shadow-md duration-300 hover:shadow-white w-32 h-32 mx-auto border p-2 rounded-xl'/>
+                    <SiTailwindcss className='text-white bg-gray-800/[0.4] hover:bg-brown-700 hover:bg-opacity-50 hover:shadow-md duration-300 hover:shadow-brown-600 w-32 h-32 mx-auto border p-2 rounded-xl'/>
                 </div>
                 <div>
-                    <DiJavascript className='text-white hover:shadow-md duration-300 hover:shadow-white w-32 h-32 mx-auto border p-2 rounded-xl'/>
+                    <DiJavascript className='text-white bg-gray-800/[0.4] hover:bg-brown-700 hover:bg-opacity-50 hover:shadow-md duration-300 hover:shadow-brown-600 w-32 h-32 mx-auto border p-2 rounded-xl'/>
                 </div>
                 <div>
-                    <DiReact className='text-white hover:shadow-md duration-300 hover:shadow-white w-32 h-32 mx-auto border p-2 rounded-xl'/>
+                    <DiReact className='text-white bg-gray-800/[0.4] hover:bg-brown-700 hover:bg-opacity-50 hover:shadow-md duration-300 hover:shadow-brown-600 w-32 h-32 mx-auto border p-2 rounded-xl'/>
                 </div>
                 <div>
-                    <DiNodejsSmall className='text-white hover:shadow-md duration-300 hover:shadow-white border rounded-xl w-32 h-32 mx-auto'/>
+                    <DiNodejsSmall className='text-white bg-gray-800/[0.4] hover:bg-brown-700 hover:bg-opacity-50 hover:shadow-md duration-300 hover:shadow-brown-600 border rounded-xl w-32 h-32 mx-auto'/>
                 </div>
                 <div>
-                    <img className='mx-auto h-32 border  hover:shadow-md duration-300 hover:shadow-white rounded-xl p-7' src={express_logo} alt="" />
+                    <img className='mx-auto h-32 border  bg-gray-800/[0.4] hover:bg-brown-700 hover:bg-opacity-50 hover:shadow-md duration-300 hover:shadow-brown-600 rounded-xl p-7' src={express_logo} alt="" />
                 </div>
                 <div>
-                    <DiMongodb className='text-white hover:shadow-md duration-300 hover:shadow-white w-32 h-32 mx-auto border p-2 rounded-xl'/>
+                    <DiMongodb className='text-white bg-gray-800/[0.4] hover:bg-brown-700 hover:bg-opacity-50 hover:shadow-md duration-300 hover:shadow-brown-600 w-32 h-32 mx-auto border p-2 rounded-xl'/>
                 </div>
             </div>
         </div>
