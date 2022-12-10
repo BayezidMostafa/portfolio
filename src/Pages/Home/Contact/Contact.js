@@ -2,6 +2,7 @@ import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { Button, Input, Textarea } from '@material-tailwind/react';
 import { toast } from 'react-hot-toast';
+import { FaFacebookSquare, FaGithubSquare, FaLinkedin } from "react-icons/fa";
 
 export const ContactUs = () => {
     const form = useRef();
@@ -21,7 +22,7 @@ export const ContactUs = () => {
     return (
         <div className='my-20 container mx-auto'>
             <p style={{textShadow:"0 3px 3px #b36417"}} className='text-5xl text-white text-center mb-16'>Contact Panel</p>
-            <div className='grid md:grid-cols-2 grid-cols-1'>
+            <div className='grid md:grid-cols-2 grid-cols-1 md:gap-16'>
                 <form className='text-white' ref={form} onSubmit={sendEmail}>
                     <div className=''>
                         <Input type='text' name="user_name" color="brown" label="Your Name" />
@@ -32,10 +33,17 @@ export const ContactUs = () => {
                     <div className='mt-3'>
                         <Textarea label='Message' color='brown' name="message" />
                     </div>
-                    <Button fullWidth color='brown' type='submit' size='lg' className='text-white mt-2'>Send</Button>
+                    <Button variant='gradient' fullWidth color='brown' type='submit' size='lg' className='text-white mt-2'>Send</Button>
                 </form>
-                <div>
-
+                <div className='mt-5 md:mt-0'>
+                    <p className='text-xl sm:text-5xl text-white'>Bayezid Mostafa</p>
+                    <p className='text-xl sm:text-2xl text-white'>Jhenaidah, Khulna, Bangladesh</p>
+                    <p className='text-xl'>+8801701348877</p>
+                    <div className='flex gap-2'>
+                        <a className='text-white hover:text-brown-200 duration-300 shadow' href="https://github.com/BayezidMostafa"><FaGithubSquare className='w-16 h-16 shadow-brown-500 shadow-md rounded'/></a>
+                        <a className='text-white hover:text-brown-200 duration-300 shadow' href="https://www.facebook.com/dev.bayezid"><FaFacebookSquare className='w-16 h-16 shadow-brown-500 shadow-md rounded'/></a>
+                        <a className='text-white hover:text-brown-200 duration-300 shadow' href="https://www.linkedin.com/in/bayezid-mostafa/"><FaLinkedin className='w-16 h-16 shadow-brown-500 shadow-md rounded'/></a>
+                    </div>
                 </div>
             </div>
         </div>

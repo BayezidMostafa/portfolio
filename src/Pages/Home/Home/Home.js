@@ -7,10 +7,11 @@ import Skills from '../Skills/Skills';
 const Home = () => {
     return (
         <div>
-            <Introduction/>
-            <Skills/>
-            <Projects/>
-            <ContactUs/>
+            <div data-aos="flip-left"><Introduction /></div>
+
+            <Skills />
+            <Projects />
+            <ContactUs />
         </div>
     );
 };
