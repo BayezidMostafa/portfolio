@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import Portfolio from '../../../assets/bayezid_mostafa_mern_stack.pdf'
 import {
     Navbar,
     MobileNav,
@@ -33,17 +34,13 @@ export default function NavBar() {
                 >
                     <span className="text-3xl text-white">_Bayezid</span>
                 </Typography>
-                <Button
-                    onClick={() => {
-                        window.open(
-                            "https://drive.google.com/file/d/1FtjQIpVBiEQTumu4BNTNRaOuOjwvB7v2/view?usp=sharing",
-                            "_blank"
-                        );
-                    }}
-                    color="brown" ripple={false} variant="outlined" size="lg" className="hidden lg:inline-block">
-                    <div className="hidden lg:block">{navList}</div>
-                    <span className="text-white">Download Resume</span>
-                </Button>
+                <a href={Portfolio} download>
+                    <Button
+                        color="brown" ripple={false} variant="outlined" size="lg" className="hidden lg:inline-block">
+                        <div className="hidden lg:block">{navList}</div>
+                        <span className="text-white">Download Resume</span>
+                    </Button>
+                </a>
                 <IconButton
                     variant="text"
                     className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
@@ -84,16 +81,12 @@ export default function NavBar() {
             </div>
             <MobileNav open={openNav}>
                 {navList}
-                <Button
-                    onClick={() => {
-                        window.open(
-                            "https://drive.google.com/file/d/1FtjQIpVBiEQTumu4BNTNRaOuOjwvB7v2/view?usp=sharing",
-                            "_blank"
-                        );
-                    }}
-                    ripple={false} variant="gradient" size="lg" fullWidth className="mb-2">
-                    <span>Download Resume</span>
-                </Button>
+                <a href={Portfolio} download>
+                    <Button
+                        ripple={false} variant="gradient" size="lg" fullWidth className="mb-2">
+                        <span>Download Resume</span>
+                    </Button>
+                </a>
             </MobileNav>
         </Navbar>
     );
