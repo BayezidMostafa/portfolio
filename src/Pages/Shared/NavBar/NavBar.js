@@ -7,7 +7,7 @@ import {
     Button,
     IconButton,
 } from "@material-tailwind/react";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function NavBar() {
     const [openNav, setOpenNav] = useState(false);
@@ -21,9 +21,13 @@ export default function NavBar() {
 
 
     const navList = (
-        <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
-            <a className="text-xl text-brown-600" href="#projects" >Projects</a>
-            <Link></Link>
+        <ul className="text-white text-[15px] mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
+            <Link to='/' className="hover:text-brown-600 duration-200">Home</Link>
+            <a className="hover:text-brown-600 duration-200" href="#skills" >Skills</a>
+            <a className="hover:text-brown-600 duration-200" href="#projects" >Projects</a>
+            <a className="hover:text-brown-600 duration-200" href="#about" >About</a>
+            <a className="hover:text-brown-600 duration-200" href="#contact" >Contact</a>
+            <Link className="hover:text-brown-600 duration-200" to='/blog'>Blog</Link>
         </ul>
     );
 

@@ -20,8 +20,8 @@ export const ContactUs = () => {
     };
 
     return (
-        <div className='my-20 container mx-auto'>
-            <p style={{textShadow:"0 3px 3px #b36417"}} className='text-5xl text-white text-center mb-16'>Contact Panel</p>
+        <div id='contact' className='my-20 container mx-auto'>
+            <p style={{textShadow:"0 3px 3px #b36417"}} className='text-5xl font-bold text-white text-center mb-16'>Contact Panel</p>
             <div className='grid md:grid-cols-2 grid-cols-1 md:gap-16'>
                 <form className='text-white' ref={form} onSubmit={sendEmail}>
                     <div className=''>
@@ -36,13 +36,11 @@ export const ContactUs = () => {
                     <Button variant='gradient' fullWidth color='brown' type='submit' size='lg' className='text-white mt-2'>Send</Button>
                 </form>
                 <div className='mt-5 md:mt-0'>
-                    <p className='text-xl sm:text-5xl text-white'>Bayezid Mostafa</p>
-                    <p className='text-xl sm:text-2xl text-white'>Jhenaidah, Khulna, Bangladesh</p>
-                    <p className='text-xl'>+8801701348877</p>
+                    <p style={{textShadow:"0 3px 3px #b36417"}} className='mb-3 text-2xl md:text-3xl lg:text-5xl font-bold text-white'>Social Media Information</p>
                     <div className='flex gap-2'>
-                        <a className='text-white hover:text-brown-200 duration-300 hover:translate-y-1 hover:translate-x-1 ease-in-out shadow' href="https://github.com/BayezidMostafa"><FaGithubSquare className='w-16 h-16 shadow-brown-500 shadow-md rounded'/></a>
-                        <a className='text-white hover:text-brown-200 duration-300 hover:translate-y-1 hover:translate-x-1 ease-in-out shadow' href="https://www.facebook.com/dev.bayezid"><FaFacebookSquare className='w-16 h-16 shadow-brown-500 shadow-md rounded'/></a>
-                        <a className='text-white hover:text-brown-200 duration-300 hover:translate-y-1 hover:translate-x-1 ease-in-out shadow' href="https://www.linkedin.com/in/bayezid-mostafa/"><FaLinkedin className='w-16 h-16 shadow-brown-500 shadow-md rounded'/></a>
+                        <a className='text-white hover:text-brown-200 duration-300 hover:translate-y-1 hover:translate-x-1 ease-in-out shadow' href="https://github.com/BayezidMostafa"><FaGithubSquare className='w-20 h-20 shadow-brown-500 shadow-md rounded'/></a>
+                        <a className='text-white hover:text-brown-200 duration-300 hover:translate-y-1 hover:translate-x-1 ease-in-out shadow' href="https://www.facebook.com/dev.bayezid"><FaFacebookSquare className='w-20 h-20 shadow-brown-500 shadow-md rounded'/></a>
+                        <a className='text-white hover:text-brown-200 duration-300 hover:translate-y-1 hover:translate-x-1 ease-in-out shadow' href="https://www.linkedin.com/in/bayezid-mostafa/"><FaLinkedin className='w-20 h-20 shadow-brown-500 shadow-md rounded'/></a>
                     </div>
                 </div>
             </div>
