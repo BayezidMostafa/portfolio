@@ -17,7 +17,7 @@ const Introduction = () => {
                         Working as a,
                         <Typewriter
                             options={{
-                                strings: ['Front-End Development', 'React JS Development', 'MERN Stack Development'],
+                                strings: ['Front-End Developer', 'React JS Developer', 'MERN Stack Developer'],
                                 autoStart: true,
                                 loop: true,
                             }}
