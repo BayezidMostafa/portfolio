@@ -90,7 +90,7 @@ export default function NavBar() {
                 {navList}
                 <a href={Portfolio} download>
                     <Button
-                        ripple={false} variant="gradient" size="lg" fullWidth className="mb-2">
+                        ripple={false} color="brown" variant="gradient" size="md" fullWidth className="mb-2">
                         <span>Download Resume</span>
                     </Button>
                 </a>
