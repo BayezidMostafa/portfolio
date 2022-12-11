@@ -40,9 +40,9 @@ export const ContactUs = () => {
                     <p className='text-xl sm:text-2xl text-white'>Jhenaidah, Khulna, Bangladesh</p>
                     <p className='text-xl'>+8801701348877</p>
                     <div className='flex gap-2'>
-                        <a className='text-white hover:text-brown-200 duration-300 shadow' href="https://github.com/BayezidMostafa"><FaGithubSquare className='w-16 h-16 shadow-brown-500 shadow-md rounded'/></a>
-                        <a className='text-white hover:text-brown-200 duration-300 shadow' href="https://www.facebook.com/dev.bayezid"><FaFacebookSquare className='w-16 h-16 shadow-brown-500 shadow-md rounded'/></a>
-                        <a className='text-white hover:text-brown-200 duration-300 shadow' href="https://www.linkedin.com/in/bayezid-mostafa/"><FaLinkedin className='w-16 h-16 shadow-brown-500 shadow-md rounded'/></a>
+                        <a className='text-white hover:text-brown-200 duration-300 hover:translate-y-1 hover:translate-x-1 ease-in-out shadow' href="https://github.com/BayezidMostafa"><FaGithubSquare className='w-16 h-16 shadow-brown-500 shadow-md rounded'/></a>
+                        <a className='text-white hover:text-brown-200 duration-300 hover:translate-y-1 hover:translate-x-1 ease-in-out shadow' href="https://www.facebook.com/dev.bayezid"><FaFacebookSquare className='w-16 h-16 shadow-brown-500 shadow-md rounded'/></a>
+                        <a className='text-white hover:text-brown-200 duration-300 hover:translate-y-1 hover:translate-x-1 ease-in-out shadow' href="https://www.linkedin.com/in/bayezid-mostafa/"><FaLinkedin className='w-16 h-16 shadow-brown-500 shadow-md rounded'/></a>
                     </div>
                 </div>
             </div>

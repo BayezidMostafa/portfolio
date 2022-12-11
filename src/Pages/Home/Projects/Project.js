@@ -4,12 +4,12 @@ import {
     Typography,
     Button,
 } from "@material-tailwind/react";
+import { Link } from "react-router-dom";
 
 export default function Project({ project }) {
-    const { image, name, live, client, server, details } = project;
-    console.log(live);
+    const { image, name, live, client, server, details, _id } = project;
     return (
-        <Card className="bg-white bg-opacity-10 hover:bg-brown-700 hover:bg-opacity-10 duration-300">
+        <Card className="bg-white bg-opacity-10 hover:bg-brown-700 hover:bg-opacity-10 duration-300 hover:scale-110">
             <img src={image} className="rounded-t-md" alt="" />
             <CardBody className="text-center">
                 <Typography variant="h4" color="white" className="mb-2">
@@ -25,6 +25,7 @@ export default function Project({ project }) {
                         <a className="w-full" href={server} target="_blank" rel="noreferrer"><Button fullWidth variant="outlined" color="brown" className="text-white" ripple={false}>Server Side Code</Button></a>
                     </div>
                 </div>
+                <Link to={`/projects/${_id}`}><Button color="brown" variant="gradient" fullWidth className="mt-2">Details</Button></Link>
             </CardBody>
         </Card>
     );

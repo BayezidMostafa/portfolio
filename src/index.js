@@ -4,14 +4,20 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { Toaster } from 'react-hot-toast';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+
+
+const queryClient = new QueryClient();
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Toaster 
-      position='top-center'
-    />
-    <App />
+    <QueryClientProvider client={queryClient}>
+      <Toaster
+        position='top-center'
+      />
+      <App />
+    </QueryClientProvider>
   </React.StrictMode>
 );
 
